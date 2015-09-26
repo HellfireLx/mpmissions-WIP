@@ -29,9 +29,9 @@ class Header
 // F3 - Loading Screen
 // You can edit the text that appears on the mission loading screen, and even include a picture. Info link: http://ferstaberinde.com/f3/en//index.php?title=Loading_Screen
 
-onLoadName = "Breach & Clear";
+onLoadName = "Abdera's Box";
 onLoadMission = "";
-author = "James Clarke";
+author = "Hellfire";
 loadScreen = "loadLogo.jpg";
 overviewPicture = "overviewLogo.jpg";
 
@@ -48,7 +48,7 @@ enableDebugConsole = 0;
 // TEST RUN! DO NOT EDIT. Configures the respawn options. Info link: http://ferstaberinde.com/f3/en//index.php?title=Respawn_Settings
 
 respawn = 1;
-respawndelay = 15;
+respawndelay = 10;
 respawnOnStart = 0;
 respawnTemplates[] = {"seagull","f_spectator"};
 
@@ -403,12 +403,6 @@ class CfgRespawnTemplates
 // Menu components for the Spectator Script
 #include "f\spect\config.hpp"
 
-// ============================================================================================
-
-// Is vital for TAW View Distance Script to work.
-// DO NOT EDIT.
-
-#include "taw_vd\dialog.hpp"
 
 // ============================================================================================
 
@@ -533,7 +527,7 @@ class CfgFunctions
 		#include "f\spect\functions.hpp"
 
 	};
-#include "taw_vd\CfgFunctions.hpp"
+
 };
 
 

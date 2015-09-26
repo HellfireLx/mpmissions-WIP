@@ -139,7 +139,7 @@ f_var_removeBodyDistance = 500;
 // TEST RUN! DO NOT EDIT. Is vital to spawn Zeus units with proper AI skill. Info link: http://ferstaberinde.com/f3/en//index.php?title=AI_Skill_Selector
 
 // f_var_civAI = independent; 		// Optional: The civilian AI will use this side's settings
-[] execVM "f\setAISKill\f_setAISkill.sqf";
+//[] execVM "f\setAISKill\f_setAISkill.sqf";
 
 // ====================================================================================
 
@@ -237,31 +237,46 @@ f_var_JIP_GearMenu = false;			// Can JIP/respawned players select their own gear
 // [] execVM "f\medical\medical_init.sqf";
 
 // ====================================================================================
-// a function to spawn a victory item in some buildingPos in the as argument pass marked area
-// the position and radius has been determined by picking it in the editor.
+// Spawn a victory box in some random buildingPos
+// DO NOT PUT ANY CODE BELOW THIS SECTION 
 
 
 	//only once on the server;
+	//we have to create the action as function so we can call it with BIS_fnc_MP
+	fnc_MPVictoryAction = {
+		_this addAction ["Win for BluFor - Pick this menu entry", {if (side player == west) then {
+				["Blufor wins the match ! They reached the Abderan's Box !","hint",true,true] call BIS_fnc_MP; 
+				};
+			}];
+	};
+	
 if (isServer) then {
 	waitUntil {!isnil "bis_fnc_init" && time>1};
 	private ["_nearBuildings","_pickedBuilding","_possInBuilding","_pickedPosInBuilding","_victoryBox"];
-	//[9432.1494,119.92252,20236.951]
-	_nearBuildings = nearestObjects [[9432.1494,20236.951,119.92252], ["House"], 150 ];
+	//[9432.1494,119.92252,20236.951] coordinates taking from a marker area, watch out inversion of y and z axis
+	//TODO use a marker and its position and radius
+	_nearBuildings = nearestObjects [[9432.1494,20236.951,119.92252], ["House"] , 150 ];
 	_pickedBuilding = _nearBuildings call BIS_fnc_selectRandom;
 	_possInBuilding = [_pickedBuilding] call BIS_fnc_buildingPositions;
+	//if the array is empty we have to pick another building
+	while {count _possInBuilding  == 0} do {
+		_pickedBuilding = _nearBuildings call BIS_fnc_selectRandom;
+		_possInBuilding = [_pickedBuilding] call BIS_fnc_buildingPositions;
+	};
 	_pickedPosInBuilding = _possInBuilding call BIS_fnc_selectRandom;
 	//only for debug purpose
-	_markerstr = createMarker ["VictoryItem",_pickedPosInBuilding];
-    _markerstr setMarkerShape "ICON";
-    _markerstr setMarkerType "hd_dot";
+	//_markerstr = createMarker ["VictoryItem",_pickedPosInBuilding];
+    //_markerstr setMarkerShape "ICON";
+    //_markerstr setMarkerType "hd_dot";
+	//[format["Found position %1 in building %2 at position %3 from %4 possible buildings, marked on map", _pickedPosInBuilding, _pickedBuilding, getPos _pickedBuilding, count _nearBuildings],"hint",true,true] call BIS_fnc_MP;  
+	
 	//actual code
 	_victoryBox = createVehicle ["Box_IND_Ammo_F", [0,0,0], [], 0, "CAN_COLLIDE"];
+	clearMagazineCargoGlobal _victoryBox;
+	clearWeaponCargoGlobal _victoryBox;
 	_victoryBox setPos _pickedPosInBuilding;
-	_victoryBox addAction ["Win for BluFor - Pick this menu entry", {if (side player == west) then {
-			["Blufor wins the match ! They reached the box containing the Intel !","hint",true,true] call BIS_fnc_MP; 
-		};
-	}];
-	[format["Found position %1 in building %2 at position %3, marked on map", _pickedPosInBuilding, _pickedBuilding, getPos _pickedBuilding],"hint",true,true] call BIS_fnc_MP;  
+	[_victoryBox,"fnc_MPVictoryAction",true,true] call BIS_fnc_MP; 
 };
 
-
+// ====================================================================================
+// DO NOT PUT ANY CODE BELOW THIS SECTION 

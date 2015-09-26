@@ -46,6 +46,7 @@ class Mission
 	randomSeed=9572582;
 	class Intel
 	{
+		briefingName="PvP - 36p  - Abdera's Box - v1";
 		resistanceWest=0;
 		startWeather=0.29999998;
 		startWind=0.099999994;
@@ -57,8 +58,8 @@ class Mission
 		year=2035;
 		month=6;
 		day=24;
-		hour=17;
-		minute=0;
+		hour=18;
+		minute=20;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -618,12 +619,12 @@ class Mission
 				class Item0
 				{
 					position[]={8393.7764,180.7108,18228.893};
-					azimut=149.91299;
+					azimut=149.9126;
 					special="NONE";
 					id=10;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -639,6 +640,7 @@ class Mission
 					id=11;
 					side="WEST";
 					vehicle="B_medic_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_ASL_M";
 					init="removeAllAssignedItems this; GrpNATO_ASL = group this; [""m"",this] call f_fnc_assignGear;";
@@ -660,6 +662,7 @@ class Mission
 					id=12;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -675,6 +678,7 @@ class Mission
 					id=13;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A1_AR1";
 					init="removeAllAssignedItems this; GrpNATO_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
@@ -688,6 +692,7 @@ class Mission
 					id=14;
 					side="WEST";
 					vehicle="B_soldier_AAR_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_A1_AAR1";
@@ -702,6 +707,7 @@ class Mission
 					id=15;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A1_AT1";
 					init="removeAllAssignedItems this; GrpNATO_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
@@ -715,6 +721,7 @@ class Mission
 					id=16;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A1_AT2";
 					init="removeAllAssignedItems this; GrpNATO_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
@@ -728,6 +735,7 @@ class Mission
 					id=17;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A1_AR2";
 					init="removeAllAssignedItems this; GrpNATO_A1 = group this; [""r"",this] call f_fnc_assignGear;";
@@ -749,6 +757,7 @@ class Mission
 					id=18;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -764,6 +773,7 @@ class Mission
 					id=19;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A2_AR3";
 					init="removeAllAssignedItems this; GrpNATO_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
@@ -777,6 +787,7 @@ class Mission
 					id=20;
 					side="WEST";
 					vehicle="B_soldier_AAR_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_A2_AAR2";
@@ -791,6 +802,7 @@ class Mission
 					id=21;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A2_AT3";
 					init="removeAllAssignedItems this; GrpNATO_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
@@ -804,6 +816,7 @@ class Mission
 					id=22;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A2_AT4";
 					init="removeAllAssignedItems this; GrpNATO_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
@@ -817,6 +830,7 @@ class Mission
 					id=23;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A2_AR4";
 					init="removeAllAssignedItems this; GrpNATO_A2 = group this; [""r"",this] call f_fnc_assignGear;";
@@ -838,6 +852,7 @@ class Mission
 					id=24;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -853,6 +868,7 @@ class Mission
 					id=25;
 					side="WEST";
 					vehicle="B_medic_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_BSL_M";
 					init="removeAllAssignedItems this; GrpNATO_BSL = group this; [""m"",this] call f_fnc_assignGear;";
@@ -874,6 +890,7 @@ class Mission
 					id=26;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -889,6 +906,7 @@ class Mission
 					id=27;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B1_AR1";
 					init="removeAllAssignedItems this; GrpNATO_B1 = group this; [""ar"",this] call f_fnc_assignGear;";
@@ -902,6 +920,7 @@ class Mission
 					id=28;
 					side="WEST";
 					vehicle="B_soldier_AAR_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_B1_AAR1";
@@ -916,6 +935,7 @@ class Mission
 					id=29;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B1_AT1";
 					init="removeAllAssignedItems this; GrpNATO_B1 = group this; [""rat"",this] call f_fnc_assignGear;";
@@ -929,6 +949,7 @@ class Mission
 					id=30;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B1_AT2";
 					init="removeAllAssignedItems this; GrpNATO_B1 = group this; [""rat"",this] call f_fnc_assignGear;";
@@ -942,6 +963,7 @@ class Mission
 					id=31;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B1_AR2";
 					init="removeAllAssignedItems this; GrpNATO_B1 = group this; [""r"",this] call f_fnc_assignGear;";
@@ -963,6 +985,7 @@ class Mission
 					id=32;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -978,6 +1001,7 @@ class Mission
 					id=33;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B2_AR3";
 					init="removeAllAssignedItems this; GrpNATO_B2 = group this; [""ar"",this] call f_fnc_assignGear;";
@@ -991,6 +1015,7 @@ class Mission
 					id=34;
 					side="WEST";
 					vehicle="B_soldier_AAR_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_B2_AAR2";
@@ -1005,6 +1030,7 @@ class Mission
 					id=35;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B2_AT3";
 					init="removeAllAssignedItems this; GrpNATO_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
@@ -1018,6 +1044,7 @@ class Mission
 					id=36;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B2_AT4";
 					init="removeAllAssignedItems this; GrpNATO_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
@@ -1031,6 +1058,7 @@ class Mission
 					id=37;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B2_AR4";
 					init="removeAllAssignedItems this; GrpNATO_B2 = group this; [""r"",this] call f_fnc_assignGear;";
@@ -1052,6 +1080,7 @@ class Mission
 					id=38;
 					side="EAST";
 					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -1067,6 +1096,7 @@ class Mission
 					id=39;
 					side="EAST";
 					vehicle="O_medic_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_ASL_M";
 					init="GrpCSAT_ASL = group this; [""m"",this] call f_fnc_assignGear;";
@@ -1088,6 +1118,7 @@ class Mission
 					id=40;
 					side="EAST";
 					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -1103,6 +1134,7 @@ class Mission
 					id=41;
 					side="EAST";
 					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_A1_AR1";
 					init="GrpCSAT_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
@@ -1116,6 +1148,7 @@ class Mission
 					id=42;
 					side="EAST";
 					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -1131,6 +1164,7 @@ class Mission
 					id=43;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A1_AT1";
@@ -1145,6 +1179,7 @@ class Mission
 					id=44;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A1_AT2";
@@ -1159,6 +1194,7 @@ class Mission
 					id=45;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_A1_AR2";
 					init="GrpCSAT_A1 = group this; [""r"",this] call f_fnc_assignGear;";
@@ -1180,6 +1216,7 @@ class Mission
 					id=46;
 					side="EAST";
 					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -1195,6 +1232,7 @@ class Mission
 					id=47;
 					side="EAST";
 					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_A2_AR3";
 					init="GrpCSAT_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
@@ -1208,6 +1246,7 @@ class Mission
 					id=48;
 					side="EAST";
 					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -1223,6 +1262,7 @@ class Mission
 					id=49;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A2_AT3";
@@ -1237,6 +1277,7 @@ class Mission
 					id=50;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A2_AT4";
@@ -1251,6 +1292,7 @@ class Mission
 					id=51;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_A2_AR4";
 					init="GrpCSAT_A2 = group this; [""r"",this] call f_fnc_assignGear;";
@@ -1272,6 +1314,7 @@ class Mission
 					id=52;
 					side="EAST";
 					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -1287,6 +1330,7 @@ class Mission
 					id=53;
 					side="EAST";
 					vehicle="O_medic_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_BSL_M";
 					init="GrpCSAT_BSL = group this; [""m"",this] call f_fnc_assignGear;";
@@ -1308,6 +1352,7 @@ class Mission
 					id=54;
 					side="EAST";
 					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -1323,6 +1368,7 @@ class Mission
 					id=55;
 					side="EAST";
 					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_B1_AR1";
 					init="GrpCSAT_B1 = group this; [""ar"",this] call f_fnc_assignGear;";
@@ -1336,6 +1382,7 @@ class Mission
 					id=56;
 					side="EAST";
 					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -1351,6 +1398,7 @@ class Mission
 					id=57;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B1_AT1";
@@ -1365,6 +1413,7 @@ class Mission
 					id=58;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B1_AT2";
@@ -1379,6 +1428,7 @@ class Mission
 					id=59;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_B1_AR2";
 					init="GrpCSAT_B1 = group this; [""r"",this] call f_fnc_assignGear;";
@@ -1400,6 +1450,7 @@ class Mission
 					id=60;
 					side="EAST";
 					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -1415,6 +1466,7 @@ class Mission
 					id=61;
 					side="EAST";
 					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_B2_AR3";
 					init="GrpCSAT_B2 = group this; [""ar"",this] call f_fnc_assignGear;";
@@ -1428,6 +1480,7 @@ class Mission
 					id=62;
 					side="EAST";
 					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -1443,6 +1496,7 @@ class Mission
 					id=63;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B2_AT3";
@@ -1457,6 +1511,7 @@ class Mission
 					id=64;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B2_AT4";
@@ -1471,6 +1526,7 @@ class Mission
 					id=65;
 					side="EAST";
 					vehicle="O_Soldier_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_B2_AR4";
 					init="GrpCSAT_B2 = group this; [""r"",this] call f_fnc_assignGear;";
@@ -1492,7 +1548,8 @@ class Mission
 			vehicle="MELB_MH6M";
 			lock="UNLOCKED";
 			skill=0.60000002;
-			description="Alpha Medic";
+			init="clearMagazineCargoGlobal this;clearWeaponCargoGlobal this;";
+			description="Littlebird";
 		};
 		class Item1
 		{
@@ -1504,7 +1561,8 @@ class Mission
 			vehicle="rhsusf_m1025_w";
 			lock="UNLOCKED";
 			skill=0.60000002;
-			description="Alpha Medic";
+			init="clearMagazineCargoGlobal this;clearWeaponCargoGlobal this;";
+			description="Humvee";
 		};
 		class Item2
 		{
@@ -1516,7 +1574,8 @@ class Mission
 			vehicle="rhsusf_m1025_w";
 			lock="UNLOCKED";
 			skill=0.60000002;
-			description="Alpha Medic";
+			init="clearMagazineCargoGlobal this;clearWeaponCargoGlobal this;";
+			description="Humvee";
 		};
 		class Item3
 		{
@@ -1528,7 +1587,8 @@ class Mission
 			vehicle="rhsusf_m1025_w";
 			lock="UNLOCKED";
 			skill=0.60000002;
-			description="Alpha Medic";
+			init="clearMagazineCargoGlobal this;clearWeaponCargoGlobal this;";
+			description="Humvee";
 		};
 		class Item4
 		{
@@ -1540,21 +1600,24 @@ class Mission
 			vehicle="rhsusf_M1083A1P2_wd_fmtv_usarmy";
 			lock="UNLOCKED";
 			skill=0.60000002;
-			description="Alpha Medic";
+			init="clearMagazineCargoGlobal this;clearWeaponCargoGlobal this;";
+			description="Army Truck";
 		};
 	};
 	class Markers
 	{
-		items=4;
+		items=3;
 		class Item0
 		{
 			position[]={9441.5059,117.00953,20199.604};
 			name="AO";
 			markerType="ELLIPSE";
 			type="Empty";
-			colorName="ColorGrey";
+			colorName="ColorRed";
+			fillName="Border";
 			a=500;
 			b=500;
+			drawBorder=1;
 		};
 		class Item1
 		{
@@ -1568,17 +1631,6 @@ class Mission
 			position[]={9497.8076,136.48488,20185.762};
 			name="A";
 			type="Faction_RU";
-		};
-		class Item3
-		{
-			position[]={9432.1494,119.92252,20236.951};
-			name="victoryItemArea";
-			markerType="ELLIPSE";
-			type="Empty";
-			fillName="Border";
-			a=150;
-			b=150;
-			drawBorder=1;
 		};
 	};
 	class Sensors
@@ -1615,7 +1667,7 @@ class Mission
 			timeoutMax=15;
 			interruptable=1;
 			age="UNKNOWN";
-			expActiv="Hint ""OpFor has been eliminated. BluFor wins.""";
+			expActiv="Hint ""OpFor has been eliminated. BluFor still has to find the box.""";
 			class Effects
 			{
 			};

@@ -27,7 +27,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-Made by James Clarke.
+Made by Hellfire. Template by James Clarke.
 <br/><br/>
 Made with F3 (http://www.ferstaberinde.com/f3/en/)
 "]];
@@ -39,7 +39,7 @@ Made with F3 (http://www.ferstaberinde.com/f3/en/)
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-After death remain at base until reinsertion time. Before leaving the base confirmation by Command needs to be given. Reinsertions are organised every 30 Minutes at xx:30 and xx:00.
+After death you will have the possibility to spectate the end of the match. 
 <br/><br/>
 Brightness and Gamma need to be on 1.0. Changing those values is considered cheating.
 <br/><br/>

@@ -27,7 +27,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Made by Hellfire. Template by James Clarke.
 <br/><br/>
 Made with F3 (http://www.ferstaberinde.com/f3/en/)
 "]];
@@ -39,7 +39,11 @@ Made with F3 (http://www.ferstaberinde.com/f3/en/)
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+After death you will have the possibility to spectate the end of the match. 
+<br/><br/>
+Brightness and Gamma need to be on 1.0. Changing those values is considered cheating.
+<br/><br/>
+Video setting Shadows needs to be at least on low, turning them off gives an unfair advantage and is considered cheating.
 "]];
 
 // ====================================================================================
