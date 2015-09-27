@@ -30,6 +30,11 @@ if (f_var_debugMode == 1) then
 	player sideChat format ["DEBUG (f_fnc_mpEndReciever): _ending = %1, _state = %2",_ending,_state];
 };
 
+
+// ==================================================================================
+// CNTO doesn't like scoreboards 
+disableDebriefingStats;
+
 // ====================================================================================
 
 // CLEAN-UP OBJECTIVES & TRIGGER CUT-SCENES ETC.

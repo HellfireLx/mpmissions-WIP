@@ -364,7 +364,73 @@ class CfgDebriefing
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
+	
+	class Draw
+	{
+		title = "It's a draw !";
+		subtitle = "No team downloaded the Intel in time !";
+		description = "";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	
+	class BluForWin
+	{
+		title = "BluFor won the match !";
+		subtitle = "Your team downloaded the Intel in time ! Congratulations !";
+		description = "";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	
+    class BluForLose
+	{
+		title = "OpFor won the match !";
+		subtitle = "Your team couldn't prevent the download !  Congratulations to OpFor !";
+		description = "";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	
 
+	
+	class OpForWin
+	{
+		title = "OpFor won the match !";
+		subtitle = "Your team downloaded the Intel in time ! Congratulations !";
+		description = "";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	
+	class OpForLose
+	{
+		title = "BluFor won the match !";
+		subtitle = "Your team couldn't prevent the download ! Congratulations to BluFor !";
+		description = "";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+
+};
+// CNTO special no scores policy -- does not work ?
+class CfgDebriefingSections
+{
+	class bPoints
+	{
+		title = "Hope you had fun lads";
+		variable = "";
+	};
+	class oPoints : bPoints
+	{
+		// Does the same as blufor points
+	};
 };
 
 // ============================================================================================
@@ -538,3 +604,6 @@ class CfgFunctions
 class CfgUnitInsignia {
 	#include "f\assignGear\insignia\define.hpp"
 };
+
+//include stuff for download script
+#include "downloadData.hpp"
