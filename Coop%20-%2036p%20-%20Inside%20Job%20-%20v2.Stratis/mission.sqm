@@ -590,7 +590,7 @@ class Mission
 						};
 						class Item2
 						{
-							value="";
+							value="""Ares""";
 							parentCls="ACE_ModuleCheckPBOs";
 							typeName="Whitelist";
 						};
@@ -1700,7 +1700,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=3;
+		items=11;
 		class Item0
 		{
 			position[]={5998.0347,0.016614623,3001.9819};
@@ -1724,6 +1724,68 @@ class Mission
 			text="Bravo Net: 343, C2";
 			type="mil_dot";
 			colorName="ColorWEST";
+		};
+		class Item3
+		{
+			position[]={5212.0864,223.13011,5005.8945};
+			name="com_towers";
+			text="Communication Towers";
+			type="loc_Transmitter";
+			colorName="ColorEAST";
+		};
+		class Item4
+		{
+			position[]={4974.2183,208.1057,5906.9326};
+			name="anti_air_radar";
+			text="Anti Air Radar";
+			type="mil_objective";
+			colorName="ColorEAST";
+		};
+		class Item5
+		{
+			position[]={4967.8857,154.15569,6084.1597};
+			name="under_facility";
+			text="Underground Facility";
+			type="hd_unknown";
+			colorName="ColorEAST";
+		};
+		class Item6
+		{
+			position[]={5351.5708,11.443155,3782.1704};
+			name="ins_point";
+			text="Insertion Point";
+			type="mil_start";
+			colorName="ColorWEST";
+		};
+		class Item7
+		{
+			position[]={1875.7845,5.5,5849.1069};
+			name="Military_Airport";
+			text="Military Airport";
+			type="o_plane";
+			colorName="ColorEAST";
+		};
+		class Item8
+		{
+			position[]={6422.9785,7.5097218,5418.0098};
+			name="89_mech";
+			text="89th Mech";
+			type="o_mech_inf";
+			colorName="ColorEAST";
+		};
+		class Item9
+		{
+			position[]={4372.4209,226.89832,3816.1328};
+			name="56th_Mot";
+			text="56th Mot";
+			type="o_motor_inf";
+		};
+		class Item10
+		{
+			position[]={3263.551,5.4288774,5785.2002};
+			name="56th_Inf";
+			text="56th Inf";
+			type="o_inf";
 		};
 	};
 };
