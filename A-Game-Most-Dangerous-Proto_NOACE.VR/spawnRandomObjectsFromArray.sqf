@@ -11,13 +11,15 @@ private ["_nearBuildings","_pickedBuilding","_possInBuilding","_pickedPosInBuild
 		
 	//prepare an array of lootitems.
 	_lootItems = [[1,"arifle_MX_f","30Rnd_65x39_caseless_mag"],[2,"DemoCharge_Remote_Mag",""],[1,"srifle_DMR_03_MRCO_F","20Rnd_762x51_Mag"],[2,"SmokeShell",""],[1,"hgun_rook40_F","16Rnd_9x21_Mag"],[1,"SMG_02_F","30Rnd_9x21_Mag_SMG_02"],[1,"hgun_ACPC2_F","9Rnd_45ACP_Mag"],[1,"arifle_Mk20C_ACO_F","30Rnd_556x45_Stanag"],[2,"MiniGrenade",""]];
-	_maxLootItems = 15;
+	_nearBuildings =  nearestObjects[getMarkerPos "playableArea", ["House"] , playableAreaRadius]  call BIS_fnc_arrayShuffle;
+	
+	_maxLootItems = (count _nearBuildings) / 3;
 	_alreadypickedBuildings = [];
 	_counter = 0;
 	//work off the array
 while {_counter < _maxLootItems} do {
 	
-		_nearBuildings =  nearestObjects[getMarkerPos "playableArea", ["House"] , playableAreaRadius]  call BIS_fnc_arrayShuffle;
+		
 		_nearBuildings = _nearBuildings - _alreadypickedBuildings;
 		if ((count _nearBuildings) == 0) exitWith {diag_log "no more buildings to put loot into !"};
 		_pickedBuilding = _nearBuildings  call BIS_fnc_selectRandom;
