@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={6390.7544,217.47903,1904.9647};
-		dir[]={-0.81516778,-0.36222464,0.45204291};
-		up[]={-0.31678274,0.93208718,0.175669};
-		aside[]={0.48497418,-1.0326039e-007,0.87455606};
+		dir[]={-0.87726957,-0.33195266,0.34678513};
+		up[]={-0.30871597,0.94329196,0.12203591};
+		aside[]={0.36762804,-5.3551048e-008,0.93000138};
 	};
 };
 binarizationWanted=0;
@@ -28,9 +28,12 @@ addons[]=
 	"A3_Ui_F",
 	"A3_Structures_F_Mil_Cargo",
 	"A3_Characters_F",
+	"cnto_units_multiside_uniforms",
 	"A3_Weapons_F",
 	"A3_Weapons_F_Items",
+	"ace_medical",
 	"A3_Weapons_F_Explosives",
+	"ace_explosives",
 	"A3_Modules_F",
 	"acre_api",
 	"A3_Structures_F_Households_House_Big02",
@@ -44,7 +47,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=11;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -75,31 +78,45 @@ class AddonsMetaData
 		};
 		class Item4
 		{
+			className="ace_medical";
+			name="ACE3 - Medical";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item5
+		{
+			className="ace_explosives";
+			name="ACE3 - Explosives";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item6
+		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item5
+		class Item7
 		{
 			className="acre_api";
 			name="acre_api";
 		};
-		class Item6
+		class Item8
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item7
+		class Item9
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item8
+		class Item10
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";

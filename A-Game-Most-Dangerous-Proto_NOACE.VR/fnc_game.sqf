@@ -123,14 +123,14 @@ CheckEndGame = {
 		//First check if you won 
 	if (({alive _x} count allUnits) == 1 && alive player) then {
 		[format ["<t size='0.7' color='#00ff00'>" + "You won the Game !!! Your Score is of %1" + "</t>", (player getVariable "score") select 0 ], 0, 0, 6, 0] spawn BIS_fnc_dynamicText;
-		"Won" call BIS_fnc_endMissionServer;
+		"GameOver" call BIS_fnc_endMissionServer;
 		
 	};
 	
 	//May be all are dead		
     if (({alive _x} count allUnits) == 0) then {
 		[format ["<t size='0.7' color='#00ff00'>" + "You all died !!! Your Score is of %1" + "</t>", (player getVariable "score") select 0 ], 0, 0, 6, 0] spawn BIS_fnc_dynamicText;
-		"Lost" call BIS_fnc_endMissionServer;
+		"GameOverNone" call BIS_fnc_endMissionServer;
 		
 	};	
 

@@ -1,0 +1,18 @@
+class CfgDebriefing
+{  
+	class GameOver
+	{
+		title = "Game Over";
+		subtitle = "Somebody Won the Game !";
+		description = "";
+	
+	};
+	
+		class GameOverNone
+	{
+		title = "Game Over";
+		subtitle = "Nobody was the best.";
+		description = "";
+	
+	};
+};
