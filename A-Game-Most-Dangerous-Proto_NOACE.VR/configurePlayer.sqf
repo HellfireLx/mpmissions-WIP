@@ -1,4 +1,4 @@
-
+private ["_playeruniforms","_allINDUnitsTargets"];
 
 _playeruniforms = [
             "U_C_Journalist",
@@ -20,17 +20,27 @@ _playeruniforms = [
 ] call BIS_fnc_selectRandom;
 
 
-//add important eventhandlers, for testing purpose with AI we add it to all units, dirty but works
+_allINDUnitsTargets = [];
 {
-	_x addMPEventHandler ["MPHit", {_this call PlayerHit;}];
-    _x addMPEventHandler ["MPKilled", {_this call PlayerKilled;_this call CheckEndGame}];
+	if ((faction _x) == "IND_F") then {
+		_allINDUnitsTargets = _allINDUnitsTargets + [_x];
+	};
 } forEach allUnits;
 
+//add important eventhandlers, for testing purpose with AI we add it to all units, dirty but works
+{
+	 _x addMPEventHandler ["MPHit", {_this call PlayerHit;}];
+     _x addMPEventHandler ["MPKilled", {_this call PlayerKilled;_this call CheckEndGame}];
+	 _x setVariable ["wanted", 0, true];
+ } forEach _allINDUnitsTargets;
 
+diag_log format["configuring player: %1", name player];
 
-//player addMPEventHandler ["MPHit", {_this call PlayerHit;}];
-//player addMPEventHandler ["MPKilled", {_this call PlayerKilled;}];
-player setVariable ["score", [0]];
+//player addMPEventHandler ["MPHit", {_this call PlayerHit}];
+//player addMPEventHandler ["MPKilled", {_this call PlayerKilled;_this call CheckEndGame}];
+player setVariable ["score", 0];
+// your record is clear;
+//player setVariable ["wanted", 0];
 	
 	
 //give every player some clothing
@@ -51,5 +61,5 @@ player forceadduniform _playeruniforms;
 [player, "hgun_Rook40_snds_F", 1] call BIS_fnc_addWeapon;
 "quarryMarker" setMarkerAlphaLocal 0;
 //send in message when player gets quarry
-waitUntil{ !isNull ((player getVariable "quarry") select 0)};
-[format ["<t size='0.7' color='#00ff00'>" + "Your quarry is %1... Stand by for positioning..." + "</t>", name ((player getVariable "quarry") select 0)], 0, 0, 6, 0] spawn BIS_fnc_dynamicText;
+waitUntil{ !isNull (player getVariable "quarry")};
+[format ["<t size='0.7' color='#00ff00'>" + "Your quarry is %1... Stand by for a GPS position..." + "</t>", name (player getVariable "quarry")], 0, 0, 6, 0] spawn BIS_fnc_dynamicText;

@@ -3,16 +3,10 @@ class CfgDebriefing
 	class GameOver
 	{
 		title = "Game Over";
-		subtitle = "Somebody Won the Game !";
+		subtitle = "Thanks for playing A Game Most Dangerous !";
 		description = "";
 	
 	};
 	
-		class GameOverNone
-	{
-		title = "Game Over";
-		subtitle = "Nobody was the best.";
-		description = "";
 	
-	};
 };

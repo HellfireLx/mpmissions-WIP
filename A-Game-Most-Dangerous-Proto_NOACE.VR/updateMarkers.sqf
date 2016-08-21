@@ -1,4 +1,4 @@
-private ["_updating","_quarryArray","_quarryUnit","_currentTurn"];
+private ["_updating","_quarryUnit","_currentTurn"];
 
 _updating = true;
 _currentTurn = 0;
@@ -12,10 +12,9 @@ while {_updating} do {
     "ownMarker" setMarkerPosLocal getPos player;
     
     if (_currentTurn % markerUpdateSleep == 0) then {
-        //get the quarry from the server ,only he knows the right thing
-		_quarryArray = player getVariable "quarry";
-		if (!isNil "_quarryArray") then {
-			_quarryUnit = _quarryArray select 0;
+      
+		if (!isNil {player getVariable "quarry"}) then {
+			_quarryUnit = player getVariable "quarry";
 			if (alive _quarryUnit) then {
 				"quarryMarker" setMarkerAlphaLocal 1;
 				"quarryMarker" setMarkerPosLocal getPos _quarryUnit;
@@ -23,7 +22,8 @@ while {_updating} do {
 			} else {
 				"quarryMarker" setMarkerAlphaLocal 0;
 			};
-		}
+		};
+		
     };
     
     sleep 1;
