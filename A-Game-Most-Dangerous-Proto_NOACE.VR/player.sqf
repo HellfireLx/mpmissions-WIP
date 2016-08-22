@@ -1,14 +1,18 @@
 
 waitUntil {time > 0 && !isNull player};
+
+
+
 switch (playerSide) do {
     case west: {
-        [] execVM "configurePolicePlayer.sqf";
+        [] call compileFinal preprocessFileLineNumbers "configurePolicePlayer.sqf";
 		[] execVM "updatePoliceMarkers.sqf";
     };
     default {
-		[] execVM "configurePlayer.sqf";
+		[] call compileFinal preprocessFileLineNumbers "configurePlayer.sqf";
 		[] execVM "updateMarkers.sqf";
 		[] execVM "poisoned.sqf";
+		[] call LimitPlayerMovement;
 	};
 };
 

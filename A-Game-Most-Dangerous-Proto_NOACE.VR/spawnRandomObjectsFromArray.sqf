@@ -10,7 +10,8 @@ private ["_nearBuildings","_pickedBuilding","_possInBuilding","_pickedPosInBuild
 	//determine how man loot of this kind we want to place according to radius or player count ?
 		
 	//prepare an array of lootitems.
-	_lootItems = [[1,"arifle_MX_f","30Rnd_65x39_caseless_mag"],[2,"DemoCharge_Remote_Mag",""],[1,"srifle_DMR_03_MRCO_F","20Rnd_762x51_Mag"],[2,"SmokeShell",""],[1,"hgun_rook40_F","16Rnd_9x21_Mag"],[1,"SMG_02_F","30Rnd_9x21_Mag_SMG_02"],[1,"hgun_ACPC2_F","9Rnd_45ACP_Mag"],[1,"arifle_Mk20C_ACO_F","30Rnd_556x45_Stanag"],[2,"MiniGrenade",""]];
+	_lootItems = [[1,"arifle_MX_f","30Rnd_65x39_caseless_mag"],[2,"DemoCharge_Remote_Mag",""],[1,"srifle_DMR_01_F","10Rnd_762x54_Mag"],[2,"SmokeShell",""],[1,"hgun_rook40_F","16Rnd_9x21_Mag"],[1,"hgun_rook40_F","16Rnd_9x21_Mag"],[1,"SMG_02_F","30Rnd_9x21_Mag_SMG_02"],[1,"hgun_ACPC2_F","9Rnd_45ACP_Mag"],[1,"arifle_Mk20C_ACO_F","30Rnd_556x45_Stanag"],[2,"MiniGrenade",""],[3,"Item_optic_Arco",""],[1,"srifle_GM6_camo_F","5Rnd_127x108_Mag"]];
+	
 	_nearBuildings =  nearestObjects[getMarkerPos "playableArea", ["House"] , playableAreaRadius]  call BIS_fnc_arrayShuffle;
 	
 	_maxLootItems = (count _nearBuildings) / 3;
@@ -60,6 +61,9 @@ while {_counter < _maxLootItems} do {
 			case 2: {// explosives
 				_lootHolder addMagazineCargoGlobal[_lootItemtoPlace select 1, 1];
 			};		
+			case 3: {// items
+				_lootHolder addItemCargoGlobal[_lootItemtoPlace select 1, 1];
+			};
 		 
 		};
 		_lootHolder setPos _pickedPosInBuilding;

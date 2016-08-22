@@ -10,7 +10,8 @@ if (isServer) then {
 
 
 if (hasInterface) then {
-     [] execVM "player.sqf";   
+	
+    [] execVM "player.sqf";   
 };
 
 

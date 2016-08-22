@@ -30,11 +30,14 @@ _allINDUnitsTargets = [];
 //add important eventhandlers, for testing purpose with AI we add it to all units, dirty but works
 {
 	 _x addMPEventHandler ["MPHit", {_this call PlayerHit;}];
-     _x addMPEventHandler ["MPKilled", {_this call PlayerKilled;_this call CheckEndGame}];
+     _x addMPEventHandler ["MPKilled", {_this call PlayerKilled;}];
 	 _x setVariable ["wanted", 0, true];
  } forEach _allINDUnitsTargets;
 
 diag_log format["configuring player: %1", name player];
+
+
+
 
 //player addMPEventHandler ["MPHit", {_this call PlayerHit}];
 //player addMPEventHandler ["MPKilled", {_this call PlayerKilled;_this call CheckEndGame}];
@@ -44,21 +47,39 @@ player setVariable ["score", 0];
 	
 	
 //give every player some clothing
+
+
+comment "Remove existing items";
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
+
+comment "Add containers";
 player forceadduniform _playeruniforms;
 
-// give players some items
-// removeBackpack player;
-// removeAllWeapons player;
-// removeAllItemsWithMagazines player;
- removeAllAssignedItems player;
-// player addVest "V_BandollierB_blk";
- player addItem "ItemGPS";    
- player assignItem "ItemGPS";
- player addItemToUniform "FirstAidKit";
-// player addItemToUniform "ACE_morphine";
+player addItemToUniform "FirstAidKit";
+player addBackpack "B_FieldPack_blk";
+
+comment "Add weapons";
+
+comment "Add items";
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "ItemWatch";
+player linkItem "ItemGPS";
+
+
 
 //for testing purpose
-[player, "hgun_Rook40_snds_F", 1] call BIS_fnc_addWeapon;
+[player, "hgun_Rook40_F", 1] call BIS_fnc_addWeapon;
+
+[player] joinSilent grpNull;
+
 "quarryMarker" setMarkerAlphaLocal 0;
 //send in message when player gets quarry
 waitUntil{ !isNull (player getVariable "quarry")};

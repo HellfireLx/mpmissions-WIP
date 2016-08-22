@@ -1,5 +1,6 @@
-[] execVM "spawnRandomObjectsFromArray.sqf";
-[] execVM "placeVehicles.sqf";
+[] call compileFinal preprocessFileLineNumbers "spawnRandomObjectsFromArray.sqf";
+[] call compileFinal preprocessFileLineNumbers "placeVehicles.sqf";
 waitUntil {time > 0};
-[] execVM "placePlayers.sqf";
-[] execVM "assignQuarry.sqf";
+[] call compileFinal preprocessFileLineNumbers "placePlayers.sqf";
+[] call compileFinal preprocessFileLineNumbers "assignQuarry.sqf";
+[] execVM "checkEndGame.sqf"; 

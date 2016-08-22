@@ -10,7 +10,7 @@ _allINDUnitsTargets = [];
 } forEach allUnits;
 
 _allUnitsTargets = +_allINDUnitsTargets;
-diag_log format["before shuffled : %1",_allUnitsTargets ]; 
+//diag_log format["before shuffled : %1",_allUnitsTargets ]; 
 //Using Sattolo's Algorithm
 for [{_i=(count _allUnitsTargets - 1)}, {_i > 0}, {_i=_i-1}] do
 {
@@ -20,9 +20,9 @@ for [{_i=(count _allUnitsTargets - 1)}, {_i > 0}, {_i=_i-1}] do
 	_swap = _allUnitsTargets select _r;
 	_allUnitsTargets set [_r, _allUnitsTargets select _i];
 	_allUnitsTargets set [ _i, _swap];
-   diag_log format["swapped  %1 to index %2, %3 goes to index %4", _swap, _i,  (_allUnitsTargets select _r), _r];
+   //diag_log format["swapped  %1 to index %2, %3 goes to index %4", _swap, _i,  (_allUnitsTargets select _r), _r];
 };
-diag_log format["shuffled : %1",_allUnitsTargets ];
+//diag_log format["shuffled : %1",_allUnitsTargets ];
 //assign the quarries
 
 {

@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6461.1299,278.77017,1979.8953};
-		dir[]={-0.74282634,-0.56114042,0.36524546};
-		up[]={-0.50355881,0.82772017,0.24759923};
-		aside[]={0.44125637,-1.0653166e-006,0.8974176};
+		pos[]={6243.6279,139.50101,2015.9435};
+		dir[]={-0.76984185,-0.28068215,0.57327592};
+		up[]={-0.22513726,0.959795,0.16765307};
+		aside[]={0.59728122,-1.2144446e-006,0.80207938};
 	};
 };
 binarizationWanted=0;
@@ -29,7 +29,6 @@ addons[]=
 	"A3_Structures_F_Mil_Cargo",
 	"A3_Characters_F",
 	"A3_Data_F_Curator_Characters",
-	"A3_Weapons_F",
 	"A3_Weapons_F_Items",
 	"A3_Modules_F",
 	"acre_api",
@@ -41,6 +40,7 @@ addons[]=
 	"A3_Soft_F_Gamma_Van_01",
 	"A3_Weapons_F_Rifles_Khaybar",
 	"A3_Weapons_F_Acc",
+	"A3_Weapons_F",
 	"A3_Weapons_F_Pistols_ACPC2",
 	"acre_sys_prc148"
 };
@@ -933,6 +933,7 @@ class Mission
 					class Attributes
 					{
 						name="player_0";
+						description="Player";
 						isPlayable=1;
 						class Inventory
 						{
@@ -940,16 +941,6 @@ class Mission
 							{
 								typeName="U_C_Poloshirt_blue";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="MiniGrenade";
-										count=1;
-										ammoLeft=1;
-									};
-								};
 								class ItemCargo
 								{
 									items=1;
@@ -960,8 +951,6 @@ class Mission
 									};
 								};
 							};
-							compass="ItemCompass";
-							watch="ItemWatch";
 						};
 					};
 					id=1;
@@ -1018,7 +1007,25 @@ class Mission
 					class Attributes
 					{
 						name="player_1";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=108;
 					type="I_Soldier_unarmed_F";
@@ -1074,7 +1081,25 @@ class Mission
 					class Attributes
 					{
 						name="player_3";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=112;
 					type="I_Soldier_unarmed_F";
@@ -1129,7 +1154,25 @@ class Mission
 					class Attributes
 					{
 						name="player_4";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=114;
 					type="I_Soldier_unarmed_F";
@@ -1184,7 +1227,25 @@ class Mission
 					class Attributes
 					{
 						name="player_5";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=116;
 					type="I_Soldier_unarmed_F";
@@ -1240,7 +1301,25 @@ class Mission
 					class Attributes
 					{
 						name="player_6";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=118;
 					type="I_Soldier_unarmed_F";
@@ -1294,7 +1373,25 @@ class Mission
 					class Attributes
 					{
 						name="player_7";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=120;
 					type="I_Soldier_unarmed_F";
@@ -1349,7 +1446,25 @@ class Mission
 					class Attributes
 					{
 						name="player_8";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=122;
 					type="I_Soldier_unarmed_F";
@@ -1405,7 +1520,25 @@ class Mission
 					class Attributes
 					{
 						name="player_9";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=124;
 					type="I_Soldier_unarmed_F";
@@ -1459,7 +1592,25 @@ class Mission
 					class Attributes
 					{
 						name="player_12";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=130;
 					type="I_Soldier_unarmed_F";
@@ -1513,7 +1664,25 @@ class Mission
 					class Attributes
 					{
 						name="player_13";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=132;
 					type="I_Soldier_unarmed_F";
@@ -1567,7 +1736,25 @@ class Mission
 					class Attributes
 					{
 						name="player_14";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=134;
 					type="I_Soldier_unarmed_F";
@@ -1621,7 +1808,25 @@ class Mission
 					class Attributes
 					{
 						name="player_15";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=136;
 					type="I_Soldier_unarmed_F";
@@ -1675,7 +1880,25 @@ class Mission
 					class Attributes
 					{
 						name="player_16";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=138;
 					type="I_Soldier_unarmed_F";
@@ -1729,7 +1952,25 @@ class Mission
 					class Attributes
 					{
 						name="player_17";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=140;
 					type="I_Soldier_unarmed_F";
@@ -1783,7 +2024,25 @@ class Mission
 					class Attributes
 					{
 						name="player_18";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=142;
 					type="I_Soldier_unarmed_F";
@@ -1837,7 +2096,25 @@ class Mission
 					class Attributes
 					{
 						name="player_19";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=144;
 					type="I_Soldier_unarmed_F";
@@ -2136,7 +2413,25 @@ class Mission
 					class Attributes
 					{
 						name="player_20";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=146;
 					type="I_Soldier_unarmed_F";
@@ -2192,7 +2487,25 @@ class Mission
 					class Attributes
 					{
 						name="player_10";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=126;
 					type="I_Soldier_unarmed_F";
@@ -2246,7 +2559,25 @@ class Mission
 					class Attributes
 					{
 						name="player_11";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=128;
 					type="I_Soldier_unarmed_F";
@@ -2300,7 +2631,25 @@ class Mission
 					class Attributes
 					{
 						name="player_2";
+						description="Player";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_blue";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+						};
 					};
 					id=110;
 					type="I_Soldier_unarmed_F";
@@ -2885,6 +3234,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						description="Police Officer";
 						isPlayable=1;
 						class Inventory
 						{
@@ -2995,6 +3345,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						description="Police Officer";
 						isPlayable=1;
 						class Inventory
 						{
@@ -3104,6 +3455,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						description="Police Officer";
 						isPlayable=1;
 						class Inventory
 						{
@@ -3213,6 +3565,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						description="Police Officer";
 						isPlayable=1;
 						class Inventory
 						{
@@ -3322,6 +3675,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						description="Police Officer";
 						isPlayable=1;
 						class Inventory
 						{

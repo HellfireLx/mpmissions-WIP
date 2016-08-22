@@ -19,14 +19,13 @@ while {_updating} do {
 		};
 	} forEach allUnits;
 
-	diag_log _allINDUnitsWanted;
 	
     if (_currentTurn % markerUpdateSleep == 0) then {
 		
 		{
 			 
-			 _wantedMarkerName = format["wantedMarker_%1",  _x call BIS_fnc_objectVar];
-			diag_log _wantedMarkerName;
+			 _wantedMarkerName = format["wantedMarker_%1",  str _x];
+
 			 if (isNil (_wantedMarkerName)) then {
 				 createMarkerLocal [(str _wantedMarkerName), getPos _x];
 				(str _wantedMarkerName) setMarkerShapeLocal "ICON";
@@ -41,10 +40,10 @@ while {_updating} do {
 				    (str _wantedMarkerName) setMarkerColorLocal "ColorEAST";
 					(str _wantedMarkerName) setMarkerTextLocal format["<-- %1", name _x];
 				 };
-		  } else {
-				 (str _wantedMarkerName) setMarkerAlphaLocal 0;
-		  };
-			
+			  } else {
+					 (str _wantedMarkerName) setMarkerAlphaLocal 0;
+			  };
+			  
 		} forEach _allINDUnitsWanted;
 	};
     
